@@ -1,0 +1,35 @@
+{
+    "from":{
+        "email":"auto-confirm@amazon.com.au"
+    },
+    "to":[
+        {
+            "email":"oslen.martin@oslens.com"
+        }
+    ],
+    "subject":"Your Amazon.com order of \"Qualitative Data Analysis ….\" has shipped!",
+    "body":"body.html",
+    "reply_to": {"email":"no-reply@amazon.com"},
+    "date":1571723040000,
+    "date_offsets":[
+        {
+            "hour":0,
+            "days":-1,
+            "minutes":0,
+            "hours":0
+        },
+        {
+            "hour":0,
+            "days":14,
+            "minutes":0,
+            "hours":0
+        },
+        {
+            "hour":0,
+            "days":21,
+            "minutes":0,
+            "hours":0
+        }
+    ]
+    
+}

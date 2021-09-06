@@ -1,0 +1,249 @@
+<!-- email header-->
+<mat-menu #menu>
+    <button mat-menu-item>
+        <mat-icon>reply</mat-icon>
+        <span>Reply</span>
+    </button>
+    <button mat-menu-item>
+        <mat-icon>reply_all</mat-icon>
+        <span>Reply to all</span>
+    </button>
+    <button mat-menu-item>
+        <mat-icon>forward</mat-icon>
+        <span>Forward</span>
+    </button>
+    <button mat-menu-item>
+        <!-- <mat-icon>forward</mat-icon> -->
+        <span>Mark as Spam</span>
+    </button>
+</mat-menu>
+<ng-container *ngIf="email != null">
+    <div style="display: flex;flex-direction: row;padding:10px 20px 10px 72px;">
+        <h2>{{email.subject}}</h2>
+        <span class='spacer'></span>
+        <mat-icon>print</mat-icon>
+    </div>
+    <div style="padding-left: 72px;padding-right: 20px;">
+        <div style="display: flex;flex-direction: column;">
+            <div style="display: flex;flex-direction: row;height: 20px;">
+                <h3 style="margin: 0px;">
+                    <app-email-contact [contact]="email.from" ></app-email-contact>
+                </h3>
+                <span style="flex: 1 1;"></span>
+                <mat-icon *ngIf="email.has_attachments()">attachments</mat-icon>
+
+                <!-- <mat-icon color="primary">star</mat-icon> -->
+                <a class="small-icon-button" mat-icon-button #morebutton [matMenuTriggerFor]="menu">
+                    <mat-icon>more_vert</mat-icon>
+                </a>
+            </div>
+            <div style="text-align:left; display: table-cell;vertical-align: text-bottom;color: #5f6368;">
+                <span *ngFor="let con of email.to; index as i; last as isLast; first as isFirst">
+                    <span *ngIf="isFirst">to </span>
+                    <app-email-contact [contact]="con" [nameOnly]="true"></app-email-contact>
+                    <ng-container *ngIf="!isLast">,</ng-container>
+                </span>
+                <ng-container *ngIf="email.bcc">
+                    <span> bcc </span> <app-email-contact [contact]="email.bcc" [nameOnly]="true"></app-email-contact>
+                </ng-container>
+                
+                <button class="small-icon-button" mat-icon-button [matMenuTriggerFor]="detaileddata" #detailbutton>
+                    <mat-icon>arrow_drop_down</mat-icon>
+                </button>
+
+                <mat-menu #detaileddata class="detaileddata">
+                    <table class="detaileddata_table">
+                        <tr>
+                            <td style="width: 70px;">
+                                from:
+                            </td>
+                            <td>
+                                <app-email-contact [contact]="email.from" ></app-email-contact>
+                            </td>
+                        </tr>
+                        <tr *ngIf="email.reply_to">
+                            <td>
+                                reply-to:
+                            </td>
+                            <td>
+                                <app-email-contact [contact]="email.reply_to" ></app-email-contact>
+                            </td>
+                        </tr>
+                        <tr *ngIf="email.to">
+                            <td>
+                                to:
+                            </td>
+                            <td>
+                                <ng-container *ngFor="let con of email.to; index as i; last as isLast">
+                                    <app-email-contact [contact]="con" ></app-email-contact><ng-container *ngIf="!isLast">, </ng-container>
+                                </ng-container>
+                            </td>
+                        </tr>
+                        <tr *ngIf="email.bcc">
+                            <td>
+                                bcc:
+                            </td>
+                            <td>
+                                <app-email-contact [contact]="email.bcc" ></app-email-contact>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                date:
+                            </td>
+                            <td>
+                                {{email.date}}
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                subject:
+                            </td>
+                            <td>
+                                {{email.subject}}
+                            </td>
+                        </tr>
+                        <tr *ngIf="email.mailed_by!=null">
+                            <td>
+                                mailed-by:
+                            </td>
+                            <td>
+                                {{email.subject}}
+                            </td>
+                        </tr>
+                        <tr *ngIf="email.signed_by!=null">
+                            <td>
+                                signed-by:
+                            </td>
+                            <td>
+                                {{email.subject}}
+                            </td>
+                        </tr>
+                        <tr *ngIf="email.security!=null">
+                            <td>
+                                security:
+                            </td>
+                            <td>
+                                {{email.subject}}
+                            </td>
+                        </tr>
+
+                    </table>
+                </mat-menu>
+
+                <div *ngIf="showurl" style="border: 1pt solid black;">
+                    <table class="detaileddata_table">
+                        <tr>
+                            <td style="width: 70px;">
+                                from:
+                            </td>
+                            <td>
+                                <app-email-contact [contact]="email.from" ></app-email-contact>
+                            </td>
+                        </tr>
+                        <tr *ngIf="email.reply_to">
+                            <td>
+                                reply-to:
+                            </td>
+                            <td>
+                                <app-email-contact [contact]="email.reply_to" ></app-email-contact>
+                            </td>
+                        </tr>
+                        <tr *ngIf="email.to">
+                            <td>
+                                to:
+                            </td>
+                            <td>
+                                <ng-container *ngFor="let con of email.to; index as i; last as isLast">
+                                    <app-email-contact [contact]="con" ></app-email-contact><ng-container *ngIf="!isLast">, </ng-container>
+                                </ng-container>
+                            </td>
+                        </tr>
+                        <tr *ngIf="email.bcc">
+                            <td>
+                                bcc:
+                            </td>
+                            <td>
+                                <app-email-contact [contact]="email.bcc" ></app-email-contact>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                date:
+                            </td>
+                            <td>
+                                {{email.date}}
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                subject:
+                            </td>
+                            <td>
+                                {{email.subject}}
+                            </td>
+                        </tr>
+                        <tr *ngIf="email.mailed_by!=null">
+                            <td>
+                                mailed-by:
+                            </td>
+                            <td>
+                                {{email.subject}}
+                            </td>
+                        </tr>
+                        <tr *ngIf="email.signed_by!=null">
+                            <td>
+                                signed-by:
+                            </td>
+                            <td>
+                                {{email.subject}}
+                            </td>
+                        </tr>
+                        <tr *ngIf="email.security!=null">
+                            <td>
+                                security:
+                            </td>
+                            <td>
+                                {{email.subject}}
+                            </td>
+                        </tr>
+
+                    </table>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+    <!--Email body-->
+    <div style="padding-left: 72px; margin-top: 20px; padding-right: 20px;" >
+        <div (click)="handle_click($event)" #emailBody id="email_body" [innerHTML]="email_body()" style="flex-shrink: 0; flex-grow: 1;" [class.showurl]="showurl" [class.hideurl]="!showurl" >
+        </div>
+    </div>
+
+
+    <!-- Email Attachments if any-->
+
+    <div *ngIf="email.has_attachments()" class="attachments" >
+        <p>Attachments</p>
+        <div style="display: flex; flex-direction: row; " >
+        <a mat-stroked-button target="_blank" *ngFor="let at of email.attachments; index as i; last as isLast" href="assets/document.pdf">
+            {{at}}
+        </a>
+       </div>
+    </div>
+
+</ng-container>
+
+<ng-container *ngIf="email==null">
+    <div style="padding-top: 50px;
+    width: 100%;
+    font-size: larger;
+    display: flex; align-items: center;">
+        <div class="spacer"></div>
+        <span>
+            Select an email
+        </span>
+        <div class="spacer"></div>
+    </div>
+</ng-container>

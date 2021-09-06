@@ -1,0 +1,7 @@
+.hidden{
+    display: none;
+}
+
+.selected{
+    background: rgba(127, 168, 230, 0.8);
+}

@@ -1,0 +1,20 @@
+{
+    "from":{
+        "name":"Commonwealth Bank of Australia",
+        "email":"no-reply.commbank@comrnbank.com"
+    },
+    "to":[
+        {
+            "email":"oslen.martin@oslens.com"
+        }
+    ],
+    "subject":"Access locked",
+    "body":"body.html",
+    "date":1569134640000,
+    "date_offsets":[{
+        "hour":0,
+        "days":7,
+        "minutes":0,
+        "hours":0
+    }]
+}

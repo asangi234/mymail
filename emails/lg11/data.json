@@ -1,0 +1,14 @@
+{
+    "from":{
+        "email":"ian.wood@adelaide.edu.au" 
+    },
+    "to":[
+        {   "name":"Martin Oslen",
+            "email":"martin.oslen@adelaide.edu.au"
+        }
+    ],
+    "subject":"Report",
+    "body":"body.html",
+    "date":1571723040000,
+    "attachments":["Document.pdf"]
+}

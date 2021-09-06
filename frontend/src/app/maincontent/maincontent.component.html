@@ -1,0 +1,20 @@
+
+<div class="main-content">
+    <app-email-dirs #email_dirs></app-email-dirs>
+    <as-split unit="pixel" gutterSize="5">
+        <as-split-area size="300" minSize="100" maxSize="500">
+            <app-email-list (selected_email)="email.load_email($event)" style="width: 100%; min-width: 100px;">
+            </app-email-list>
+        </as-split-area>
+        <as-split-area size="*">
+            <div class="docs-component-sidenav-inner-content">
+
+                <app-email #email>
+                </app-email>
+            </div>
+        </as-split-area>
+
+    </as-split>
+
+</div>
+

@@ -1,0 +1,17 @@
+{
+    "from":{
+        "email":"no-reply@edm.cba.com.au" 
+    },
+    "to":[
+        {   "name":"Martin Oslen",
+            "email":"oslen.martin@oslens.com"
+        }
+    ],
+    "subject":"A recent transaction was declined",
+    "body":"body.html",
+    "date":1571723040000,
+    "reply_to":{
+        "name":"Commonwealth bank of Australia",
+        "email":"reply-feca13777461057d-15_HTML-45961259-7207336-1135114@edm.cba.com.au"
+    }
+}

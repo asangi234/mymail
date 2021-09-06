@@ -1,0 +1,14 @@
+{
+    "from":{
+        "name":"Oslen Mary (via Google Sheets)",
+        "email":"oslen.mary@oslens.com"
+    },
+    "to":[
+        {
+            "email":"oslen.martin@oslens.com"
+        }
+    ],
+    "subject":"Monthly expenses - Invitation to edit",
+    "body":"body.html",
+    "date":1567261800000
+}

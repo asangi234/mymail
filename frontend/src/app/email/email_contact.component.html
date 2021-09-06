@@ -1,0 +1,6 @@
+<span *ngIf="contact.name">
+    <span>{{contact.name}}</span><span *ngIf="!nameOnly" style="color: rgb(85,85,85);font-size: 0.75rem;"> &lt;{{contact.email}}&gt;</span>
+</span>
+<span *ngIf="!contact.name">
+    <span>{{contact.email}}</span>
+</span>

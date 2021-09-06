@@ -1,0 +1,28 @@
+{
+    "from":{
+        "email":"casualemployment@adelaide.edu.au"
+    },
+    "to":[
+        {
+            "email":"martin.oslen@adelaide.edu.au"
+        }
+    ],
+    "subject":"Offer of Casual employment",
+    "body":"body.html",
+    "date":1567261800000,
+    "date_offsets":[
+        {
+            "hour":0,
+            "days":3,
+            "minutes":0,
+            "hours":0
+        }
+        ,
+        {
+            "hour":0,
+            "days":0,
+            "minutes":0,
+            "hours":0
+        }
+    ]
+}

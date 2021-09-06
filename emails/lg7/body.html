@@ -1,0 +1,138 @@
+<style type="text/css">
+    body {
+        margin:0;
+        color:#333;
+    }
+
+    a {
+        text-decoration:none;
+        color:#006699;
+    }
+
+    p {
+        margin:0px;
+    }
+
+    img {
+        border:0;
+        margin:0;
+        text-align: center;
+    }
+
+    #title p{
+        font-size:20px;
+        font-family: "Amazon Ember", Arial, sans-serif;
+    }
+
+    #transactionLogoContainer {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    #transactionLogo {
+        display:table-cell;
+        vertical-align:middle;
+        text-align:center;
+        overflow:hidden;
+    }
+</style>
+
+<table align="center" cellspacing="0" width="500" cellpadding="0" style="padding-top: 20px; padding-bottom: 20px;">
+    <tbody>
+        <tr>
+            <td>
+                <table cellspacing="0" width="480" cellpadding="0" style="margin-top:0px; margin-bottom: 0px; margin-left: 20px; margin-right: 20px">
+                    <tbody>
+                    <tr>
+                        <td width="480" height="52" style="border-bottom:1px solid #eaeaea; padding-top:10px; padding-left:0px; padding-right:0px; padding-bottom:10px;">
+                            <table cellspacing="0" cellpadding="0">
+                                <tbody>
+                                <tr>
+                                    <td width="100" id="logo">
+                                        <img id="amazonLogoImg" alt="Amazon Logo Image" width="93" height="27" src="attachments/amazon_logo_RGB._CB424887820_.png"/>
+                                    </td>
+                                    <td width="380" valign="top" align="right" style="font-size:20px; font-family: 'Amazon Ember', Arial, sans-serif;"><p>Sign-in from new device detected</p></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td id="transactionLogoContainer" colspan="2" align="center">
+                            <div id="transactionLogo" width="200" height="200">
+                                <img alt="Sign-in from new device detected Image" width="200" height="200" src="attachments/nocap11683c580xh._CB447664765_.png"/>
+                            </div>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="2" align="left" style="font-weight: 700; font-size: large; font-family: 'Amazon Ember', Arial, sans-serif;">
+                            <p>Martin, we detected a sign-in to your account from a new device.</p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td align="left">
+                            <table align="left" cellspacing="0" cellpadding="0" style="padding-top: 20px; padding-bottom: 20px;">
+                                <tr>
+                                    <td style="text-align: left; vertical-align: top; font-weight: 700; font-family: 'Amazon Ember', Arial, sans-serif; padding-right: 5px; padding-bottom: 1px; padding-top: 1px;" >
+                                        When
+                                    </td>
+                                    <td style="text-align: left;font-family: 'Amazon Ember', Arial, sans-serif; padding-left: 5px; padding-bottom: 1px; padding-top: 1px;">
+                                        {{dates[0].strftime("%B %d, %Y %-I:%-M %p")}} Australian Central Standard Time (South Australia)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: left; vertical-align: top; font-weight: 700; font-family: 'Amazon Ember', Arial, sans-serif; padding-right: 5px; padding-bottom: 1px; padding-top: 1px;">
+                                        Device
+                                    </td>
+                                    <td style="text-align: left;font-family: 'Amazon Ember', Arial, sans-serif; padding-left: 5px; padding-bottom: 1px; padding-top: 1px;">
+                                        Mozilla Firefox macOS (Desktop)
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: left; vertical-align: top; font-weight: 700; font-family: 'Amazon Ember', Arial, sans-serif; padding-right: 5px; padding-bottom: 1px; padding-top: 1px;">
+                                        Near
+                                    </td>
+                                    <td style="text-align: left;font-family: 'Amazon Ember', Arial, sans-serif; padding-left: 5px; padding-bottom: 1px; padding-top: 1px;">South Australia, Australia</td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="480" height="45" colspan="2" align="left" style="text-align: left; vertical-align: top; font-weight: 700; font-size: medium;font-family: 'Amazon Ember', Arial, sans-serif;padding-bottom: 20px;">
+                            <p>If this was you, you can disregard this message.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="left" width="480" height="30" style="padding: 0">
+                            <a href="https://www.amazon.com/gp/f.html?C=1BDNQAME26BY1&M=urn:rtn:msg:20200611005202adb643a888404f8ca3bc5b8da250p0na&R=10BKSOHSQ075A&T=C&U=https%3A%2F%2Fwww.amazon.com%2Fa%2Fc%2Fr%3Fk%25da48d5b7ca4f9db0568c4995ddd1d3-465d%26ref_%pe_2429110_469155710&H=PLEAZO5YB1ZU0A1URRGEAEIUA1WA&ref_=pe_2429110_469155710" style="font-family: 'Amazon Ember', Arial, sans-serif;font-size: 100%;color: #444;padding: 0px;">
+                                <div id="detailsContainer" style="border-color: #ADB1B8 #A2A6AC #8D9096;background: linear-gradient(to bottom,#f7f8fa,#e7e9ec);text-decoration: none!important;vertical-align: middle;color: #444;box-shadow: 0 0 5px -1px rgba(0,0,0,0.2);cursor: pointer;padding-left: 0px;padding-right: 0px;padding-bottom: 5px;padding-top: 5px;text-align: center;line-height: 29px;margin: 0;outline: 0;white-space: nowrap;border-radius: 3px;border-style: solid;border-width: 1px;width: 100%!important;font-weight: 700;font-size: large;font-family: 'Amber', Arial, san-serif;">
+                                    View Details
+                                </div>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td width="485">
+                            <div style="width: 485px; border: 1px solid #808080; padding-top: 5px; padding-left: 10px; padding-right: 10px; padding-bottom: 15px; margin-top: 40px; margin-right: 0px; margin-left: 0px; margin-bottom: 8px; color: #444;">
+                                <h2 style="font-weight: 700;font-size: 13px; font-family: 'Amazon Ember', Arial, sans-serif; padding-bottom: 10px;">
+                                    Is it safe to follow this link?</h2>
+                                <div>
+                                    <a style="font-size: small; color: black; font-family: 'Amazon Ember', Arial, sans-serif; pointer-events: none; cursor: default; text-decoration: none;">
+                                        The link provided in this email starts with "https://www.amazon.com". If you prefer, copy the following link and paste it into a browser to view.
+                                    </a>
+                                </div>
+                                <br>
+                                <a style="font-size: small; color: black; font-family: 'Amazon Ember', Arial, sans-serif; pointer-events: none; cursor: default; text-decoration: none; font-weight: 600">
+                                    https://www.amazon.com/a/c/r?k=24da48d5b7ca4f9db0568c4995ddd1d3-787a
+                                </a>
+                            </div>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </tbody>
+</table>

@@ -1,0 +1,18 @@
+<div style="padding: 20px;">
+
+</div>
+<table class="emails">
+    <ng-container *ngFor="let e of emails; index as i">
+        <tr class="row" (click)="load_email(i,e)" [ngClass]="{read:(e!=_selected)&&(e.read),selected:e==_selected}">
+            <td *ngIf="isTestUser()">
+                {{e.id}}
+            </td>
+            <td class="subject">
+                    <div>{{e.subject}}</div>
+            </td>
+            <td class="date">
+                <div>{{get_date_representation(e.date)}}</div>
+            </td>
+        </tr>
+    </ng-container>
+</table>

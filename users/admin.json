@@ -1,0 +1,30 @@
+{
+    "username":"admin",
+    "password" :"changeme",
+    "selection":[
+        "lg1",
+        "lg2",
+        "lg3",
+        "lg4",
+        "lg5",
+        "lg6",
+        "lg7",
+        "lg8",
+        "lg9",
+        "lg10",
+        "lg11",
+        "lg12",
+        "ph1",
+        "ph2",
+        "ph3",
+        "ph4",
+        "ph5",
+        "ph6",
+        "ph7",
+        "ph8",
+        "ph9",
+        "ph10",
+        "ph11",
+        "ph12"
+    ]
+}

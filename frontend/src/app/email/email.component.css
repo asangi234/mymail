@@ -1,0 +1,52 @@
+.attachments{
+    padding-left: 72px;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 2px solid lightgray;
+}
+
+
+::ng-deep .mat-menu-panel{
+    max-width: 400px!important;
+}
+
+
+.detaileddata_table>tr>td>span{
+    font-weight:  bolder;
+
+}
+.detaileddata_table>table>tr>td:first-child{
+    text-align: right;
+    color: grey
+}
+
+
+.small-icon-button{
+    vertical-align: middle;
+    width: 24px!important;
+    min-width: unset!important;
+    height: 24px!important;
+    min-height: unset!important;
+    line-height: 24px;
+}
+
+.col_row{
+    white-space: nowrap;
+    vertical-align: middle;
+    padding: 0;
+}
+.col_row>*{
+    vertical-align: middle;
+    padding: 0;
+}
+
+.showurl ::ng-deep span.primaryurl{
+    display: block;
+    word-wrap: anywhere;
+    font-size: 10px;
+    line-height: 12px;
+}
+
+.hideurl ::ng-deep span.primaryurl{
+    display: none;
+}

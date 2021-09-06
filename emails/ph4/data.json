@@ -1,0 +1,17 @@
+{
+    "from":{
+        "name":"Mary Oslen (via Google Docs)", 
+        "email":"drive-shares-noreply@google.com"
+    },
+    "to":[
+        {
+            "email":"oslen.martin@oslens.com"
+        }
+    ],
+    "reply_to":{
+        "name":"Mary Oslen",
+        "email":"mary@sau23.org"},
+    "subject":"Monthly expenses",
+    "body":"body.html",
+    "date":1567261800000
+}

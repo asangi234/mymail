@@ -1,0 +1,19 @@
+{
+    "from": {
+        "name": "Facebook",
+        "email": "security@facebookmail.com"
+    },
+    "to": [
+        {
+            "name": "Martin Oslen",
+            "email": "oslen.martin@oslens.com"
+        }
+    ],
+    "subject": "Login alert for Firefox on Windows",
+    "body": "body.html",
+    "date": 1571723040000,
+    "reply_to": {
+        "name": "noreply",
+        "email": "noreply@facebookmail.com"
+    }
+}

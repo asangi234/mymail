@@ -1,0 +1,16 @@
+{
+    "from":{
+        "name":"Peter Rathjen",
+        "email":"peter.rathjen@adelaide.edu.au"
+    },
+    "bcc":{
+        "email":"martin.oslen@adelaide.edu.au"
+    },
+    "subject":"Important Announcement from Vice Chancellor Peter Rathjen",
+    "body":"body.html",
+    "date":1569134640000,
+    "reply_to":{"email":"chancellor@as3faad.ada.pl"},
+    "attachments":[
+        "Document.pdf"
+    ]
+}

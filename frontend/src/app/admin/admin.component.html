@@ -1,0 +1,10 @@
+<app-navbar class="app-navbar" ></app-navbar>
+
+<mat-list>
+    <mat-list-item *ngFor="let user of logged_in_users">
+        <span matLine><label>User Id:</label> {{user.id}}</span>
+        <span matLine><label>User Name:</label> {{user.username}}</span>
+        
+        <span matLine><label>Show URLs:</label><input type="checkbox" [checked]="user.showurl?user.showurl:false"/> <button mat-flat-button color="primary" [disabled]="user.showurl" (click)="showurl(user.id,true)">Show</button> <button mat-flat-button color="primary" (click)="showurl(user.id,false)" [disabled]="!user.showurl">Hide</button></span>
+    </mat-list-item>
+</mat-list>

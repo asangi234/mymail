@@ -1,0 +1,14 @@
+{
+    "from":{
+        "name":"Uber",
+        "email":"noreply.uber@gmail.com"
+    },
+    "to":[
+        {
+            "email":"oslen.martin@oslens.com"
+        }
+    ],
+    "subject":"New device sign in ",
+    "body":"body.html",
+    "date":1572645540000
+}

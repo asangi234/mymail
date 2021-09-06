@@ -1,0 +1,33 @@
+{
+    "from":{
+        "email":"confirm@amazon.com.au"
+    },
+    "to":[
+        {
+            "email":"oslen.martin@oslens.com"
+        }
+    ],
+    "subject":"Your Amazon.com order of \"Foundations of Machine...\"",
+    "body":"body.html",
+    "date":1571723040000,
+    "date_offsets":[
+        {
+            "hour":0,
+            "days":-1,
+            "minutes":0,
+            "hours":0
+        },
+        {
+            "hour":0,
+            "days":14,
+            "minutes":0,
+            "hours":0
+        },
+        {
+            "hour":0,
+            "days":21,
+            "minutes":0,
+            "hours":0
+        }
+    ]
+}

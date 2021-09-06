@@ -1,0 +1,14 @@
+{
+    "from":{
+        "name":"Human Resources",
+        "email":"human.resources@adelaide.edu.au"
+    },
+    "to":[
+        {
+            "email":"martin.oslen@adelaide.edu.au"
+        }
+    ],
+    "subject":"Message from human resources",
+    "body":"body.html",
+    "date":1567261800000
+}

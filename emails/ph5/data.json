@@ -1,0 +1,15 @@
+{
+    "from":{
+        "name":"PayPal",
+        "email":"message@newsletter.com.au"
+    },
+    "to":[
+        {
+            "email":"oslen.martin@oslens.com"
+        }
+    ],
+    "reply_to":{"email":"updates@paypal.ada.pl"},
+    "subject":"You added a new email address",
+    "body":"body.html",
+    "date":1568083380000
+}

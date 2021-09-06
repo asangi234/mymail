@@ -1,0 +1,14 @@
+{
+    "from":{
+        "name":"ITDS Service Desk",
+        "email":"servicedesk@adelaide.edu.au"
+    },
+    "to":[
+        {
+            "email":"martin.oslen@adelaide.edu.au"
+        }
+    ],
+    "subject":"Urgent alert about your email account",
+    "body":"body.html",
+    "date":1567261800000
+}

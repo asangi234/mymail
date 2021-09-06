@@ -1,0 +1,22 @@
+{
+    "from":{
+        "name":"Telstra Team",
+        "email":"telstraemailbill_noreply2@online.mytelstraemail.com"
+    },
+    "to":[
+        {
+            "email":"oslen.martin@oslens.com"
+        }
+    ],
+    "subject":"Telstra bill",
+    "body":"body.html",
+    "date":1546842660000,
+    "date_offsets":[
+        {
+            "hour":0,
+            "days":14,
+            "minutes":0,
+            "hours":0
+        }
+    ]
+}

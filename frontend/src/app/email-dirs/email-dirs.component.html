@@ -1,0 +1,26 @@
+<mat-list>
+    <mat-list-item class="selected" >
+        <mat-icon>
+            inbox
+        </mat-icon>
+        <span [class.hidden]="!longForm">Inbox</span>
+    </mat-list-item>
+    <mat-list-item>
+        <mat-icon>
+            send
+        </mat-icon>
+        <span [class.hidden]="!longForm">Sent</span>
+    </mat-list-item>
+    <mat-list-item>
+        <mat-icon>
+            drafts
+        </mat-icon>
+        <span [class.hidden]="!longForm">Drafts</span>
+    </mat-list-item>
+    <mat-list-item>
+        <mat-icon>
+            star
+        </mat-icon>
+        <span [class.hidden]="!longForm" >Stared</span>
+    </mat-list-item>
+</mat-list>

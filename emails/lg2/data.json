@@ -1,0 +1,22 @@
+{
+    "from":{
+        "email":"chiefinformationofficer@adelaide.edu.au"
+    },
+    "to":[
+        {
+            "email":"martin.oslen@aelaide.edu.au"
+        }
+    ],
+    "reply_to":{"email":"servicedesk.adelaide.edu.au"},
+    "subject":"Urgent reminder to complete your Cyber Security Awareness Training",
+    "body":"body.html",
+    "date":1599607860000,
+    "date_offsets":[
+        {
+            "hour":0,
+            "days":0,
+            "minutes":0,
+            "hours":0
+        }
+    ]
+}

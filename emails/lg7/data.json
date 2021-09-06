@@ -1,0 +1,14 @@
+{
+    "from":{
+        "name":"Amazon",
+        "email":"account-update@amazon.com" 
+    },
+    "to":[
+        {   
+            "email":"oslen.martin@oslens.com"
+        }
+    ],
+    "subject":"Amazon security alert: Sign-in from new device detected",
+    "body":"body.html",
+    "date":1571723040000
+}

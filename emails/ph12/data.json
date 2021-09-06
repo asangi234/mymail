@@ -1,0 +1,15 @@
+{
+    "from":{
+        "email":"ian.wood@adelaide.edu.au"
+    },
+    "reply_to":{"email":"ian.wood@gmail.com"},
+    "to":[
+        {
+            "email":"martin.oslen@adelaide.edu.au"
+        }
+    ],
+    "subject":"Quick question",
+    "body":"body.html",
+    "date":1569134640000
+    
+}

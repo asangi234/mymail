@@ -1,0 +1,19 @@
+.app-navbar{
+    position:fixed;
+    top:0px;
+    left:0px;
+    right:0px;
+    z-index:2;
+  }
+  
+  .app-maincontent{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 64px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+  }
+  

@@ -1,0 +1,14 @@
+{
+    "from":{
+        "name":"Facebook",
+        "email":"olivia@facebookhelpline.org"
+    },
+    "to":[
+        {
+            "email":"oslen.martin@oslens.com"
+        }
+    ],
+    "subject":"Alert",
+    "body":"body.html",
+    "date":1567261800000
+}

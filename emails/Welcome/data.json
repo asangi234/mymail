@@ -1,0 +1,27 @@
+{
+    "from":{
+        "name":"My mail team",
+        "email":"team.mymail@adelaide.edu.au"
+    },
+    "to":[
+        {
+            "email":"oslen.martinn@adelaide.edu.au"
+        }
+
+    ],
+    
+    "subject":"Welcome to my mail",
+    "body":"body.html",
+    "date":1569134640000,
+    "date_offsets":[{
+        "hour":-1,
+        "days":0,
+        "minutes":0,
+        "hours":0
+    }],
+    "reply_to":"team.mymail@adelaide.edu.au",
+    "attachments":[
+        "Document.pdf"
+    ]
+
+}
